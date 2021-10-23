@@ -6,7 +6,7 @@
 ### 2. Create a new network
 It doesn't matter how it's called, just make sure, it's the same across your configuration files
 ```
-docker network create -d overlay <name>
+docker network create <name>
 ```
 
 ### 3. Set up the Github Webhook
