@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   docker-monitor:
-    image: f1nnm/docker-monitor:0.1.1
+    image: f1nnm/docker-monitor:release-0.1.1
     ports:
       - "8080"
     volumes:
@@ -10,7 +10,7 @@ services:
     restart: always
 
   git-manager:
-    image: f1nnm/git-docker-manager:0.4.0
+    image: f1nnm/git-docker-manager:release-0.4.0
     ports:
       - "5000"
     environment:
