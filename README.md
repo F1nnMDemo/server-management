@@ -28,6 +28,7 @@ If the running git-docker-manager was successfully notified, it'll attempt to de
 #### 3. If not:
 Kill all docker containers manually:
 ```
+docker kill $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 ```
 The run the command from step 4 again.
