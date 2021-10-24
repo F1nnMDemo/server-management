@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.8"
 services:
   docker-monitor:
     image: f1nnm/docker-monitor:release-0.1.1
