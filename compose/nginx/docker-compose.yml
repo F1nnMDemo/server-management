@@ -7,7 +7,7 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - /gitdeploy/cloned-repo/compose/nginx/conf.d:/etc/nginx/conf.d
+      - /gitdeploy/compose/nginx/conf.d:/etc/nginx/conf.d
 
 networks:
   default:
