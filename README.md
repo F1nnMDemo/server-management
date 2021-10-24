@@ -16,10 +16,10 @@ The URL of the webhook should be the one, where the git-docker-manager will late
 ### 4. Deploy your repo
 Run the following command to clone the repository for the first time and get it up and running.
 ```
-docker run -e REPOSITORY=<repo> \
+docker run -e REPOSITORY=F1nnM/server-management \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v /gitdeploy/:/app/cloned-repo/ \
-  f1nnm/git-docker-manager:release-0.5.5 init
+  f1nnm/git-docker-manager:release-0.5.7 init
 ```
 Replace `<repo>` with your repository, e.g. `F1nnM/server-management`
 
@@ -31,7 +31,6 @@ If the running git-docker-manager was successfully notified, it'll attempt to de
 #### 3. If not:
 Kill all docker containers manually:
 ```
-docker kill $(docker ps -a -q)
-docker rm $(docker ps -a -q)
+docker kill $(docker ps -q) && docker rm $(docker ps -a -q)
 ```
 The run the command from step 4 again.
