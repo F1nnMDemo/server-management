@@ -18,7 +18,7 @@ Run the following command to clone the repository for the first time and get it 
 ```
 docker run -e REPOSITORY=F1nnM/server-management \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  -v /gitdeploy/:/app/cloned-repo/ \
+  -v gitdeploy:/app/cloned-repo/ \
   f1nnm/git-docker-manager:release-0.5.7 init
 ```
 Replace `<repo>` with your repository, e.g. `F1nnM/server-management`
