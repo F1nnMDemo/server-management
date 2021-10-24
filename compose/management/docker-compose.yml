@@ -17,6 +17,7 @@ services:
       - WATCHED_REPO=F1nnM/server-management
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - /gitdeploy/:/app/cloned-repo/
 
     restart: always
 
