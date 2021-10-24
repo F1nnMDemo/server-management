@@ -27,6 +27,6 @@ networks:
     name: gitdeploy
 
 volumes:
-  gitdeloy:
+  gitdeploy:
     external: true
 
