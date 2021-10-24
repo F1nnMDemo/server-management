@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  dnt:
+    image: f1nnm/dungeons-and-trivia:17
+    ports:
+      - "5000"
+
+networks:
+  default:
+    external: true
+    name: gitdeploy
+
