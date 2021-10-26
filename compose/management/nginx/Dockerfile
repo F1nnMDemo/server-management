@@ -2,7 +2,7 @@ FROM openresty/openresty:alpine-fat
 
 # Install inotify to autoreload nginx-config on changes
 RUN apk update
-RUN apk add inotify-tools -y
+RUN apk add inotify-tools
 
 # link the nginx config in
 RUN rm -r /etc/nginx/conf.d
