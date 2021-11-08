@@ -22,7 +22,9 @@ docker run -e REPOSITORY=<repo> \
   f1nnm/git-docker-manager:release-0.5.14 init
 ```
 Replace `<repo>` with your repository, e.g. `F1nnM/server-management`.
-If your repository is private, you need to add `-e PAT="<your personal auth token>"` after your repository.
+
+If your repository is private, you need to add `-e PAT="<your personal auth token>"` after your repository in this command.
+Also, you need to add it in the file "compose/management/docker-compose.yml" in line 18.
 
 ### 5. Debug issues
 If you have any issues, because of a faulty configuration, follow the following steps:
