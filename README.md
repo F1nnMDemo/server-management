@@ -21,7 +21,8 @@ docker run -e REPOSITORY=<repo> \
   -v gitdeploy:/app/cloned-repo/ \
   f1nnm/git-docker-manager:release-0.5.10 init
 ```
-Replace `<repo>` with your repository, e.g. `F1nnM/server-management`
+Replace `<repo>` with your repository, e.g. `F1nnM/server-management`.
+If your repository is private, you need to add `-e PAT="<your personal auth token>"` after your repository.
 
 ### 5. Debug issues
 If you have any issues, because of a faulty configuration, follow the following steps:
