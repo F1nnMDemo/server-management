@@ -10,11 +10,12 @@ services:
     restart: always
 
   git-manager:
-    image: f1nnm/git-docker-manager:release-0.5.11
+    image: f1nnm/git-docker-manager:release-0.5.14
     ports:
       - "5000"
     environment:
       - WATCHED_REPO=F1nnM/server-management
+      - PAT=
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - gitdeploy:/app/cloned-repo/
