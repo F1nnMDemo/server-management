@@ -11,7 +11,7 @@ RUN ln -s /gitdeploy/compose/nginx/conf.d /etc/nginx/conf.d
 
 # create storage dir for auto-ssl
 RUN mkdir /etc/resty-auto-ssl
-RUN chown www-data /etc/resty-auto-ssl
+RUN chown www /etc/resty-auto-ssl
 
 # install lua-resty-auto-ssl
 RUN /usr/local/openresty/luajit/bin/luarocks install lua-resty-auto-ssl
