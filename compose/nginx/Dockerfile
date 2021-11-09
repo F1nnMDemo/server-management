@@ -1,5 +1,8 @@
 FROM openresty/openresty:alpine-fat
 
+# Include env var in nginx config
+RUN sed -i '1i env DOMAIN_REGEX;' /usr/local/openresty/nginx/conf/nginx.conf
+
 # Install inotify to autoreload nginx-config on changes
 RUN apk update
 RUN apk add inotify-tools
