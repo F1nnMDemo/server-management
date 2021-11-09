@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   docker-monitor:
-    image: f1nnm/docker-monitor:release-0.1.3
+    image: f1nnm/docker-monitor:release-0.1.5
     ports:
       - "8080"
     volumes:
