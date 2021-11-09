@@ -28,8 +28,8 @@ services:
     ports:
       - "5555:443"
     environment:
-      # $ needs to be escaped as $$
-      - DOMAIN_REGEX=gitdeploy.xyz$$
+      # set to nothing to not issue certificats
+      - DOMAIN_REGEX=
     volumes:
       - gitdeploy:/gitdeploy:ro
     restart: always
