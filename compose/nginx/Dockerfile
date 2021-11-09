@@ -9,6 +9,9 @@ RUN apk add openssl
 RUN rm -r /etc/nginx/conf.d
 RUN ln -s /gitdeploy/compose/nginx/conf.d /etc/nginx/conf.d
 
+# create storage dir for auto-ssl
+RUN sh -c 'umask 0022 && mkdir -p /etc/resty-auto-ssl/storage/file'
+
 # install lua-resty-auto-ssl
 RUN /usr/local/openresty/luajit/bin/luarocks install lua-resty-auto-ssl
 
