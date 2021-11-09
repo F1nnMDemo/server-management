@@ -1,4 +1,4 @@
-FROM f1nnm/openresty-easy-ssl:release-0.1.0
+FROM f1nnm/openresty-easy-ssl:release-0.2.0
 
 # link the nginx config in
 RUN rm -r /etc/nginx/conf.d
