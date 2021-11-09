@@ -27,6 +27,9 @@ services:
       context: ./nginx
     ports:
       - "5555:443"
+    environment:
+      # $ needs to be escaped as $$
+      - DOMAIN_REGEX=gitdeploy.xyz$$
     volumes:
       - gitdeploy:/gitdeploy:ro
     restart: always
