@@ -24,7 +24,7 @@ services:
 
   nginx:
     build:
-      context: ./nginx
+      context: ./build_nginx
     ports:
       - "5555:443"
     environment:
