@@ -23,7 +23,7 @@ docker run -e REPOSITORY=<repo> \
 ```
 Replace `<repo>` with your repository, e.g. `F1nnM/server-management`.
 
-If your repository is private, you need to add `-e PAT="<your personal auth token>"` after your repository in this command.
+If your repository is private, you need to add `-e PAT=<your personal auth token>` after your repository in this command.
 Also, you need to add it in the file "compose/management/docker-compose.yml" in line 18.
 
 ### 5. Debug issues
