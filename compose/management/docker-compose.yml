@@ -26,7 +26,7 @@ services:
     build:
       context: ./nginx
     ports:
-      - "443:5555"
+      - "5555:443"
     volumes:
       - gitdeploy:/gitdeploy:ro
     restart: always
