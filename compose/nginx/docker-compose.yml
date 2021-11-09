@@ -7,7 +7,7 @@ services:
       - "80:80"
       - "443:443"
     environment:
-      - DOMAIN_REGEX="gitdeploy".xyz$""
+      - DOMAIN_REGEX="gitdeploy.xyz$"
     volumes:
       - gitdeploy:/gitdeploy:ro
     restart: always
