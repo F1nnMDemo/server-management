@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  dnt:
+    build: ./repo
+    ports:
+      - "4000"
+
+networks:
+  default:
+    name: gitdeploy
+

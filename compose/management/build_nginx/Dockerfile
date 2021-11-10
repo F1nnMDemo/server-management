@@ -1,4 +1,4 @@
-FROM f1nnm/openresty-easy-ssl:release-0.2.1
+FROM f1nnm/openresty-easy-ssl:release-0.3.1
 
 # link the nginx config in
 RUN ln -s /gitdeploy/compose/management/build_nginx/locations.conf /etc/nginx/conf.d/locations.conf
