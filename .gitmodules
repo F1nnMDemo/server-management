@@ -1,0 +1,6 @@
+[submodule "compose/--force"]
+	path = compose/--force
+	url = https://github.com/stefanprodan/dockprom.git
+[submodule "compose/dockprom"]
+	path = compose/dockprom
+	url = https://github.com/stefanprodan/dockprom.git
