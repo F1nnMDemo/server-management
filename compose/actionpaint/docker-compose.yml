@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   actionpaint:
-    build: ./repo
+    build: ./ActionPaint
     ports:
       - "4000"
 
