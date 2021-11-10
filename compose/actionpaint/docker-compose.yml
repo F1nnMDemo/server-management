@@ -1,6 +1,6 @@
 version: "3.8"
 services:
-  dnt:
+  actionpaint:
     build: ./repo
     ports:
       - "4000"
