@@ -1,3 +1,0 @@
-[submodule "compose/dockprom"]
-	path = compose/dockprom
-	url = https://github.com/stefanprodan/dockprom.git
