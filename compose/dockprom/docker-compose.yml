@@ -75,8 +75,8 @@ services:
     image: gcr.io/cadvisor/cadvisor:v0.42.0
     container_name: cadvisor
     privileged: true
-    devices:
-      - /dev/kmsg:/dev/kmsg
+    #devices:
+    #  - /dev/kmsg:/dev/kmsg
     volumes:
       - /:/rootfs:ro
       - /var/run:/var/run:ro
