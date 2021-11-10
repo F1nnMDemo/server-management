@@ -9,8 +9,8 @@ networks:
 volumes:
     prometheus_data: {}
     grafana_data: {}
-  gitdeploy:
-    external: true
+    gitdeploy:
+      external: true
 
 services:
 
