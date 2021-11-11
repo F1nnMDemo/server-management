@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  pcheap:
+    image: ghcr.io/f1nnm/pcheap-backend:release-0.1.1
+    ports:
+      - "80"
+
+networks:
+  default:
+    name: gitdeploy
+
