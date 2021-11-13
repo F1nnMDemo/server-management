@@ -3,28 +3,16 @@
 ## Setup
 ### 1. Install Docker
 
-### 2. Create a new network
-It doesn't matter how it's called, just make sure, it's the same across your configuration files
+### 2. Run init script
 ```
-docker network create <name>
+bash <(curl -s https://raw.githubusercontent.com/F1nnM/server-management/main/setup.sh)
 ```
-
 ### 3. Set up the Github Webhook
 In your repository go to Settings > Webhooks and add a new one for the push event.
 The URL of the webhook should be the one, where the git-docker-manager will later be running under.
 
-### 4. Deploy your repo
-Run the following command to clone the repository for the first time and get it up and running.
-```
-docker run -e REPOSITORY="<repo>" \
-  -v /var/run/docker.sock:/var/run/docker.sock \
-  -v gitdeploy:/app/cloned-repo/ \
-  f1nnm/git-docker-manager:release-0.5.24 init
-```
-Replace `<repo>` with your repository, e.g. `F1nnM/server-management`.
-
-If your repository is private, you need to add `-e PAT=<your personal auth token>` after your repository in this command.
-Also, you need to add it in the file "compose/management/docker-compose.yml" in line 18.
+### 4. If your repo is private:
+If your repository is private, you need to add a Personal Auth Token (PAT) to the file "compose/management/docker-compose.yml" in line 18.
 
 ### 5. Debug issues
 If you have any issues, because of a faulty configuration, follow the following steps:
